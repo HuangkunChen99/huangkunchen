@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NCAA Analytics Challenge | Huangkun Chen</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+      <h1>NCAA Analytics Challenge</h1>
+      <p>Forecasting March Madness with Machine Learning</p>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="generic.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="elements.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main -->
+    <div id="main" class="main">
+      <section class="main">
+        <header class="major">
+          <h2>Project Overview</h2>
+        </header>
+        <p>
+          In this project, our team forecasted the outcomes of NCAA Men's Basketball tournament games using fan-submitted bracket data and advanced machine learning techniques. We placed 6th on Kaggle's private leaderboard in the 2025 Crossroads Classic Analytics Challenge.
+        </p>
+
+        <h3>Key Techniques</h3>
+        <ul>
+          <li>Data cleaning and feature engineering on 50K+ records</li>
+          <li>XGBoost and ensemble modeling for match outcome prediction</li>
+          <li>Regional fan bias detection via K-Means clustering & DMA segmentation</li>
+          <li>Tableau dashboard for visualizing accuracy, behavior, and bias</li>
+        </ul>
+
+        <h3>Results</h3>
+        <p>
+          The final model demonstrated strong predictive power and fan behavior insights, setting a benchmark for integrating crowd-based inputs with predictive analytics in sports.
+        </p>
+
+        <p>
+          🔗 <a href="https://www.kaggle.com/competitions/crossroads-classic-analytics-challenge-25/leaderboard"
+          📊 <a href="https://github.com/HuangkunChen99/ncaa-analytics" target="_blank">GitHub Repository</a>
+        </p>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <section>
+        <h2>About This Site</h2>
+        <p>This page is part of Huangkun Chen's personal portfolio website, showcasing analytics-driven projects with real-world impact.</p>
+      </section>
+      <p class="copyright">&copy; Huangkun Chen. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
