@@ -1,31 +1,59 @@
-Stellar by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# 👋 Hi, I'm Huangkun Chen
 
+Welcome to my personal website!
 
-Say hello to Stellar, a slick little one-pager with a super vibrant color palette (which
-I guess you can always tone down if it's a little too vibrant for you), a "sticky" in-page
-nav bar (powered by my Scrollex plugin), a separate generic page template (just in case
-you need one), and an assortment of pre-styled elements.
+I'm currently pursuing my Master's in Business Analytics and Information Management at Purdue University, with a background in Data Science.
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+This site showcases my projects, resume, and contact information. Thanks for visiting!
 
-(* = not included)
+---
 
-AJ
-aj@lkn.io | @ajlkn
+## 📌 About Me
 
+🎓 **Education**  
+- Purdue University — M.S. in Business Analytics & Information Management  
+- Marquette University — B.S. in Data Science  
 
-Credits:
+🛠 **Skills**  
+- Python, SQL, R, Tableau, Java  
+- XGBoost, NLP, scikit-learn, Git, Excel  
 
-	Demo Images:
-		Unsplash (unsplash.com)
+📜 **Certifications**  
+- Microsoft Azure AI Fundamentals (AI-900)  
+- Microsoft Azure Fundamentals (AZ-900)  
 
-	Icons:
-		Font Awesome (fontawesome.io)
+---
 
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+## 💼 Projects
+
+### 🏀 NCAA Analytics Challenge  
+- Led a 4-person team to forecast semifinal outcomes using fan-submitted data.  
+- Ranked 6th on Kaggle private leaderboard.  
+- Used XGBoost, K-Means clustering, and Tableau for analysis and visualization.
+
+### 💼 Procurement Optimization  
+- Analyzed $1.7B+ in procurement data across 10K+ suppliers.  
+- Created Tableau dashboards, identified 50%+ consolidation opportunities.  
+- Projected $40M in potential savings; presented at INFORMS 2025.
+
+### 🌍 Cross-Border E-commerce  
+- Conducted regression and PCA on Tmall Global data.  
+- Explored how product features and emotional ratings impact sales.  
+- Built analytical models to support strategic decisions.
+
+---
+
+## 📄 Resume
+
+You can download my latest resume here:  
+👉 [View Resume (PDF)](https://your-resume-link.com/HuangkunChen_Resume.pdf)
+
+---
+
+## 📬 Contact
+
+📧 **Email:** chen5180@purdue.edu  
+🔗 **LinkedIn:** [linkedin.com/in/huangkun-chen](https://linkedin.com/in/huangkun-chen)  
+💻 **GitHub:** [github.com/your-username](https://github.com/your-username)
+
+Let’s connect!
