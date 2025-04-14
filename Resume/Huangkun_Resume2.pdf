@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Resume - Huangkun Chen</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <style>
+    iframe {
+      width: 100%;
+      height: 90vh;
+      border: none;
+    }
+  </style>
+</head>
+<body class="is-preload">
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+      <h1>My Resume</h1>
+      <p>View PDF Resume below</p>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+      <section id="content" class="main">
+        <iframe src="resume/Huangkun_Resume2.pdf"></iframe>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <section>
+        <h2>Contact</h2>
+        <dl class="alt">
+          <dt>Email</dt>
+          <dd><a href="mailto:chen5180@purdue.edu">chen5180@purdue.edu</a></dd>
+          <dt>LinkedIn</dt>
+          <dd><a href="https://www.linkedin.com/in/huangkun-chen-501969311">linkedin.com/in/huangkun-chen</a></dd>
+        </dl>
+      </section>
+      <p class="copyright">
+        &copy; Huangkun Chen. Design: <a href="https://html5up.net">HTML5 UP</a>.
+      </p>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
