@@ -5,6 +5,66 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+    /* Nav Container */
+    #nav {
+      display: flex;
+      justify-content: center;
+      padding: 1em 0;
+      background: #1f2235;
+      flex-wrap: wrap;
+    }
+  
+    /* Nav List */
+    #nav ul {
+      display: flex;
+      gap: 1em;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      flex-wrap: wrap;
+    }
+  
+    /* Nav Links */
+    #nav li a {
+      position: relative;
+      padding: 0.5em 1em;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+  
+    /* Bottom curved underline */
+    #nav li a::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 15%;
+      right: 15%;
+      height: 4px;
+      background: white;
+      border-radius: 10px;
+      opacity: 0;
+      transform: scaleX(0.4);
+      transition: all 0.3s ease;
+    }
+  
+    /* Hover or Active effects */
+    #nav li a:hover::after,
+    #nav li a.active::after {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+  
+    #nav li a:hover,
+    #nav li a.active {
+      color: #1f2235;
+      background-color: #1f2235; /* Keep background same as nav */
+    }
+  </style>
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   </head>
   <body class="is-preload">
