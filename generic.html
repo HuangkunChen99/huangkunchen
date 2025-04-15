@@ -31,19 +31,20 @@
     text-decoration: none;
     position: relative;
     transition: all 0.3s ease;
+    background-color: transparent;
   }
 
   #nav li a::after {
     content: '';
     position: absolute;
-    left: 10%;
-    right: 10%;
-    bottom: -5px;
+    left: 20%;
+    right: 20%;
+    bottom: -6px;
     height: 4px;
     background: white;
     border-radius: 0 0 10px 10px;
     opacity: 0;
-    transform: scaleX(0.5);
+    transform: scaleX(0.4);
     transition: all 0.3s ease;
   }
 
@@ -56,6 +57,7 @@
   #nav li a:hover,
   #nav li a.active {
     color: white;
+    background-color: #1f2235; /* 保持导航栏背景色 */
   }
 </style>
   
