@@ -6,54 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <style>
-    /* Horizontal nav for all devices */
-    #nav.horizontal-nav ul {
+    /* Custom horizontal nav style for all screens */
+    #nav {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
+      padding: 1em 0;
+      background: #1f2235;
+      flex-wrap: wrap;
+    }
+
+    #nav ul {
+      display: flex;
+      gap: 1em;
       list-style: none;
       padding: 0;
-      margin: 1em 0;
-      gap: 1.5em;
-    }
-
-    #nav.horizontal-nav ul li a {
-      padding: 0.5em 1em;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: white;
-      background: transparent;
-      border-radius: 4px;
-      text-decoration: none;
-    }
-
-    #nav.horizontal-nav ul li a:hover {
-      background: rgba(255, 255, 255, 0.1);
-    }
-
-    /* Horizontal nav for all devices */
-    #nav.horizontal-nav ul {
-      display: flex;
+      margin: 0;
       flex-wrap: wrap;
-      justify-content: center;
-      list-style: none;
-      padding: 0;
-      margin: 1em 0;
-      gap: 1.5em;
     }
 
-    #nav.horizontal-nav ul li a {
+    #nav li a {
       padding: 0.5em 1em;
-      font-weight: bold;
       text-transform: uppercase;
+      font-weight: bold;
       color: white;
-      background: transparent;
-      border-radius: 4px;
       text-decoration: none;
+      border-radius: 4px;
+      transition: background 0.3s ease;
     }
 
-    #nav.horizontal-nav ul li a:hover {
-      background: rgba(255, 255, 255, 0.1);
+    #nav li a:hover,
+    #nav li a.active {
+      background: rgba(255, 255, 255, 0.15);
     }
   </style>
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
