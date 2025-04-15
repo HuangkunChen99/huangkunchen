@@ -5,6 +5,32 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    /* Horizontal nav for all devices */
+    #nav.horizontal-nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 1em 0;
+      gap: 1.5em;
+    }
+
+    #nav.horizontal-nav ul li a {
+      padding: 0.5em 1em;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: white;
+      background: transparent;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    #nav.horizontal-nav ul li a:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+  </style>
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body class="is-preload">
@@ -21,10 +47,10 @@
       Passionate about data, analytics, and meaningful decisions.</p>
     </header>
 
-    <!-- Desktop + Mobile Nav -->
-    <nav id="nav" class="alt">
+    <!-- Nav -->
+    <nav id="nav" class="horizontal-nav">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="generic.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="resume.html">Resume</a></li>
@@ -32,23 +58,6 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-
-     <!-- Mobile Menu Trigger -->
-     <a href="#menu" class="menuToggle"><span>Menu</span></a>
-      
-     <!-- Mobile Dropdown Menu -->
-     <div id="menu">
-       <ul class="links">
-         <li><a href="index.html">Home</a></li>
-         <li><a href="generic.html">About</a></li>
-         <li><a href="projects.html">Projects</a></li>
-         <li><a href="resume.html">Resume</a></li>
-         <li><a href="elements.html">Skills</a></li>
-         <li><a href="contact.html">Contact</a></li>
-       </ul>
-     </div>
-
-
 
     <!-- Main -->
     <div id="main">
@@ -83,12 +92,12 @@
             <p>Analyzed $1.7B procurement data, identified $40M savings via supplier consolidation. Presented at INFORMS 2025.</p>
           </li>
           <li>
-          <a href="project-ecommerce.html"> 
-            <span class="icon solid major style5 fa-shopping-cart"></span>
-            <h3>Cross-border E-commerce</h3>
-            <p>Used PCA & regression to explore sales drivers on Tmall Global using multi-category product data.</p>
-          </a>
-        </li>
+            <a href="project-ecommerce.html"> 
+              <span class="icon solid major style5 fa-shopping-cart"></span>
+              <h3>Cross-border E-commerce</h3>
+              <p>Used PCA & regression to explore sales drivers on Tmall Global using multi-category product data.</p>
+            </a>
+          </li>
         </ul>
       </section>
 
@@ -115,7 +124,6 @@
           </ul>
         </header>
       </section>
-
     </div>
 
     <!-- Footer -->
