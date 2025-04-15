@@ -6,50 +6,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <style>
-    /* Custom horizontal nav style */
-    #nav {
-      display: flex;
-      justify-content: center;
-      padding: 1em 0;
-      background: #1f2235;
-      flex-wrap: wrap;
-    }
+  #nav {
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+    background: #1f2235;
+    flex-wrap: wrap;
+  }
 
-    #nav ul {
-      display: flex;
-      gap: 2em;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      flex-wrap: wrap;
-    }
+  #nav ul {
+    display: flex;
+    gap: 1em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+  }
 
-    #nav li a {
-      position: relative;
-      padding: 0.5em 1em;
-      text-transform: uppercase;
-      font-weight: bold;
-      color: white;
-      text-decoration: none;
-      transition: 0.3s;
-    }
+  #nav li a {
+    padding: 0.5em 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+  }
 
-    #nav li a:hover {
-      opacity: 0.75;
-    }
+  #nav li a::after {
+    content: '';
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: -5px;
+    height: 4px;
+    background: white;
+    border-radius: 0 0 10px 10px;
+    opacity: 0;
+    transform: scaleX(0.5);
+    transition: all 0.3s ease;
+  }
 
-    /* Selected effect: bottom rounded white underline */
-    #nav li a.active::after {
-      content: '';
-      position: absolute;
-      left: 10%;
-      right: 10%;
-      bottom: -6px;
-      height: 4px;
-      background: white;
-      border-radius: 10px;
-    }
-  </style>
+  #nav li a:hover::after,
+  #nav li a.active::after {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+
+  #nav li a:hover,
+  #nav li a.active {
+    color: white;
+  }
+</style>
   
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
