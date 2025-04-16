@@ -64,28 +64,6 @@
       color: #1f2235;
       background-color: #1f2235; /* Keep background same as nav */
     }
-
-    @media (max-width: 768px) {
-    .nav-toggle {
-      display: flex;
-    }
-
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      margin-top: 1em;
-    }
-
-    .nav-links.show {
-      display: flex;
-    }
-
-    .nav-links a {
-      padding: 1em;
-      text-align: center;
-    }
-  }
   </style>
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
@@ -114,33 +92,6 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-
-    <nav id="nav">
-    <div class="nav-container">
-      <a href="index.html" class="nav-logo">Huangkun</a>
-  
-      <div class="nav-toggle" onclick="toggleNav()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-  
-      <ul class="nav-links" id="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="generic.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="elements.html">Skills</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    </nav>
-  
-  <script>
-    function toggleNav() {
-      document.getElementById("nav-links").classList.toggle("show");
-    }
-  </script>
 
     <!-- Main -->
     <div id="main">
