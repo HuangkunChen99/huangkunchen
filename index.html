@@ -88,6 +88,24 @@
         display: flex;
       }
     }
+    @media screen and (max-width: 768px) {
+      #nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      #nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+      }
+    
+      #nav li a {
+        display: block;
+        padding: 0.75em 1.5em;
+        font-size: 1rem;
+      }
+    }
   </style>
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
