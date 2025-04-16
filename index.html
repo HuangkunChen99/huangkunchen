@@ -8,24 +8,32 @@
   <style>
     /* Nav Container */
     #nav {
-      display: flex;
-      justify-content: center;
-      padding: 1em 0;
       background: #1f2235;
-      flex-wrap: wrap;
+      padding: 1em 0;
     }
-  
+
+    /* Nav Toggle (hamburger) */
+    .nav-toggle {
+      display: none;
+      font-size: 1.5em;
+      color: white;
+      background: none;
+      border: none;
+      cursor: pointer;
+      margin: 0 auto;
+    }
+
     /* Nav List */
     #nav ul {
       display: flex;
+      justify-content: center;
       gap: 1em;
       list-style: none;
       padding: 0;
       margin: 0;
       flex-wrap: wrap;
     }
-  
-    /* Nav Links */
+
     #nav li a {
       position: relative;
       padding: 0.5em 1em;
@@ -36,8 +44,7 @@
       border-radius: 4px;
       transition: all 0.3s ease;
     }
-  
-    /* Bottom curved underline */
+
     #nav li a::after {
       content: '';
       position: absolute;
@@ -51,18 +58,35 @@
       transform: scaleX(0.4);
       transition: all 0.3s ease;
     }
-  
-    /* Hover or Active effects */
+
     #nav li a:hover::after,
     #nav li a.active::after {
       opacity: 1;
       transform: scaleX(1);
     }
-  
+
     #nav li a:hover,
     #nav li a.active {
       color: #1f2235;
-      background-color: #1f2235; /* Keep background same as nav */
+      background-color: #1f2235;
+    }
+
+    /* Mobile Styles */
+    @media screen and (max-width: 768px) {
+      .nav-toggle {
+        display: block;
+        text-align: center;
+      }
+
+      #nav ul {
+        flex-direction: column;
+        display: none;
+        margin-top: 1em;
+      }
+
+      #nav ul.show {
+        display: flex;
+      }
     }
   </style>
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -81,8 +105,9 @@
       Passionate about data, analytics, and meaningful decisions.</p>
     </header>
 
-    <!-- Nav -->
-    <nav id="nav" class="horizontal-nav">
+     <!-- Nav -->
+    <nav id="nav">
+      <button class="nav-toggle" onclick="document.querySelector('#nav ul').classList.toggle('show')">☰</button>
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="generic.html">About</a></li>
