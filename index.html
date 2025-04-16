@@ -64,6 +64,25 @@
       color: #1f2235;
       background-color: #1f2235; /* Keep background same as nav */
     }
+
+    @media screen and (max-width: 768px) {
+    #nav {
+      flex-direction: column;
+      align-items: center;
+      padding: 0.5em 0;
+    }
+  
+    #nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5em;
+    }
+  
+    #nav li a {
+      font-size: 1em;
+      padding: 0.5em 1.2em;
+    }
+  }  
   </style>
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
