@@ -14,7 +14,7 @@
       background: #1f2235;
       flex-wrap: wrap;
     }
-  
+
     /* Nav List */
     #nav ul {
       display: flex;
@@ -24,7 +24,7 @@
       margin: 0;
       flex-wrap: wrap;
     }
-  
+
     /* Nav Links */
     #nav li a {
       position: relative;
@@ -36,7 +36,7 @@
       border-radius: 4px;
       transition: all 0.3s ease;
     }
-  
+
     /* Bottom curved underline */
     #nav li a::after {
       content: '';
@@ -51,20 +51,31 @@
       transform: scaleX(0.4);
       transition: all 0.3s ease;
     }
-  
+
     /* Hover or Active effects */
     #nav li a:hover::after,
     #nav li a.active::after {
       opacity: 1;
       transform: scaleX(1);
     }
-  
+
     #nav li a:hover,
     #nav li a.active {
       color: #1f2235;
       background-color: #1f2235; /* Keep background same as nav */
     }
-  </style>
+
+    /* === ✅ Remove horizontal dashed lines under icons === */
+    .features li .icon::before,
+    .features li .icon::after {
+      content: none !important;
+      display: none !important;
+    }
+
+    .features li .icon {
+      border: none !important;
+    }
+    </style>
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   </head>
   <body class="is-preload">
@@ -93,59 +104,60 @@
       <!-- Main -->
       <div id="main">
 
-       <!-- Project Section -->
-<section class="main special">
-  <header class="major">
-    <h2>My Projects</h2>
-    <p>Here are a few highlights from my recent academic and professional work.</p>
-  </header>
-  <ul class="features">
-    <li>
-      <span class="icon solid major style1 fa-code"></span>
-      <h3><a href="project-ncaa.html">NCAA Analytics Challenge</a></h3>
-      <p>Forecasted tournament results using XGBoost and clustering. Ranked 6th on Kaggle private leaderboard.</p>
-    </li>
-    <li>
-      <a href="project-procurement.html">
-        <span class="icon solid major style3 fa-cogs"></span>
-        <h3>Procurement Optimization</h3>
-        <p>Analyzed $1.7B spend data, identified $40M savings via supplier consolidation. Presented at INFORMS 2025.</p>
-      </a>
-    </li>
-    <li>
-      <a href="project-ecommerce.html"> 
-        <span class="icon solid major style5 fa-shopping-cart"></span>
-        <h3>Cross-border E-commerce</h3>
-        <p>Used PCA & regression to explore sales drivers on Tmall Global using multi-category product data.</p>
-      </a>
-    </li>
-    <li>
-      <a href="project-Microsoft-Viva.html">
-        <span class="icon solid major style2 fa-users"></span>
-        <h3>Microsoft Viva Insight</h3>
-        <p>Built AI-powered health scoring system for enterprise communities using Reddit data, sentiment analysis, and Power BI dashboards.</p>
-      </a>
-    </li>
-  </ul>
-</section>
-
-      <!-- Footer -->
-      <footer id="footer">
-        <section>
-          <h2>About This Page</h2>
-          <p>This project page showcases key accomplishments in analytics and machine learning. More details available upon request.</p>
+        <!-- Project Section -->
+        <section class="main special">
+          <header class="major">
+            <h2>My Projects</h2>
+            <p>Here are a few highlights from my recent academic and professional work.</p>
+          </header>
+          <ul class="features">
+            <li>
+              <span class="icon solid major style1 fa-code"></span>
+              <h3><a href="project-ncaa.html">NCAA Analytics Challenge</a></h3>
+              <p>Forecasted tournament results using XGBoost and clustering. Ranked 6th on Kaggle private leaderboard.</p>
+            </li>
+            <li>
+              <a href="project-procurement.html">
+                <span class="icon solid major style3 fa-cogs"></span>
+                <h3>Procurement Optimization</h3>
+                <p>Analyzed $1.7B spend data, identified $40M savings via supplier consolidation. Presented at INFORMS 2025.</p>
+              </a>
+            </li>
+            <li>
+              <a href="project-ecommerce.html"> 
+                <span class="icon solid major style5 fa-shopping-cart"></span>
+                <h3>Cross-border E-commerce</h3>
+                <p>Used PCA & regression to explore sales drivers on Tmall Global using multi-category product data.</p>
+              </a>
+            </li>
+            <li>
+              <a href="project-Microsoft-Viva.html">
+                <span class="icon solid major style2 fa-users"></span>
+                <h3>Microsoft Viva Insight</h3>
+                <p>Built AI-powered health scoring system for enterprise communities using Reddit data, sentiment analysis, and Power BI dashboards.</p>
+              </a>
+            </li>
+          </ul>
         </section>
-        <p class="copyright">&copy; Huangkun Chen. Template from <a href="https://html5up.net">HTML5 UP</a>.</p>
-      </footer>
-    </div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+        <!-- Footer -->
+        <footer id="footer">
+          <section>
+            <h2>About This Page</h2>
+            <p>This project page showcases key accomplishments in analytics and machine learning. More details available upon request.</p>
+          </section>
+          <p class="copyright">&copy; Huangkun Chen. Template from <a href="https://html5up.net">HTML5 UP</a>.</p>
+        </footer>
+      </div>
+
+      <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.scrollex.min.js"></script>
+      <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/browser.min.js"></script>
+      <script src="assets/js/breakpoints.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
 
   </body>
+</html>
