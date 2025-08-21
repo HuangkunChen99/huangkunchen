@@ -59,70 +59,82 @@
 </head>
 <body class="is-preload">
 
-  <div id="wrapper">
-    <header id="header">
-      <h1>Microsoft Viva Insight</h1>
-      <p>AI-powered enterprise community health diagnostics</p>
-    </header>
+<!-- Wrapper -->
+<div id="wrapper">
 
-    <nav id="nav">
+  <!-- Header -->
+  <header id="header">
+    <h1>Microsoft Viva Insight</h1>
+    <p>AI-Powered Scoring for Enterprise Community Health</p>
+  </header>
+
+  <!-- Nav -->
+  <nav id="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="generic.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="elements.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main -->
+  <div id="main" class="main">
+    <section class="main">
+      <header class="major">
+        <h2>Project Overview</h2>
+      </header>
+      <p>
+        This project simulates Microsoft Viva Engage environments to assess enterprise digital community health.
+        Our team developed an AI-powered health scoring system using sentiment analysis, civility modeling,
+        and custom-designed Community Health Index (CHI) metrics.
+      </p>
+
+      <h3>Key Contributions</h3>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="generic.html">About</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="elements.html">Skills</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li>Scraped and processed over 10,000 Reddit posts simulating enterprise collaboration</li>
+        <li>Built sentiment and empathy models using GPT to classify civility and tone</li>
+        <li>Designed CHI scoring logic with metrics like reply depth, response latency, ghost posts</li>
+        <li>Created interactive Power BI dashboards to visualize trends and track team culture</li>
       </ul>
-    </nav>
 
-    <div id="main" class="main">
-      <section class="main">
-        <header class="major">
-          <h2>Project Overview</h2>
-        </header>
-        <p>
-          This project simulates the Microsoft Viva Engage environment to measure digital community health in enterprise collaboration platforms. Our team built AI models using Reddit data and sentiment analysis to construct a Civility Index and Community Health Index (CHI)—measuring quality and vitality of internal social platforms.
-        </p>
+      <h3>Technologies Used</h3>
+      <ul>
+        <li>Python (Pandas, NLTK, OpenAI API)</li>
+        <li>Power BI</li>
+        <li>Prompt Engineering & GPT-based moderation</li>
+      </ul>
 
-        <h3>Key Contributions</h3>
-        <ul>
-          <li>Scraped and processed over 10,000 Reddit posts using NLP pipelines</li>
-          <li>Built sentiment and empathy models with GPT to assess tone, relevance, and civility</li>
-          <li>Created CHI dashboards in Power BI to visualize civility trends, post latency, and community responsiveness</li>
-          <li>Applied insights to simulate internal enterprise social behavior and flag early warning signals</li>
-        </ul>
+      <h3>Research Report</h3>
+      <p>The final research paper detailing methodology and findings is available below:</p>
+      <iframe src="Resume/Research Paper Final.pdf" width="100%" height="650px" style="border: 1px solid rgba(255,255,255,0.2); border-radius: 8px;">
+        This browser does not support PDFs. Please <a href="Resume/Research Paper Final.pdf">download the PDF</a> to view it.
+      </iframe>
 
-        <h3>Technologies Used</h3>
-        <ul>
-          <li>Python (Pandas, NLTK, OpenAI API)</li>
-          <li>Power BI</li>
-          <li>Prompt engineering and sentiment analytics</li>
-        </ul>
-
-        <h3>Project Materials</h3>
-        <p>Slides and documentation can be previewed below:</p>
-        <iframe src="Resume/MS_Adv_IP.pdf" width="100%" height="650px" style="border: 1px solid rgba(255,255,255,0.2); border-radius: 8px;">
-          This browser does not support PDFs. Please <a href="Resume/MS_Adv_IP.pdf">download the PDF</a> to view it.
-        </iframe>
-      </section>
-    </div>
-
-    <footer id="footer">
-      <section>
-        <h2>About This Site</h2>
-        <p>This project is part of Huangkun Chen's portfolio. The Viva project blends AI/NLP with dashboarding to simulate enterprise collaboration metrics.</p>
-      </section>
-      <p class="copyright">&copy; Huangkun Chen. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-    </footer>
+    </section>
   </div>
 
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrollex.min.js"></script>
-  <script src="assets/js/jquery.scrolly.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
+  <!-- Footer -->
+  <footer id="footer">
+    <section>
+      <h2>About This Site</h2>
+      <p>This page is part of Huangkun Chen's personal portfolio website, showcasing analytics-driven projects with real-world impact.</p>
+    </section>
+    <p class="copyright">&copy; Huangkun Chen. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+  </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
 </body>
 </html>
